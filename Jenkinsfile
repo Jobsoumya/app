@@ -2,7 +2,7 @@ pipeline {
      agent any
 
      environment {
-         IMAGE_NAME = "python-jenkins-demo"
+         IMAGE_NAME = "app"
      }
 
      stages { 
@@ -10,7 +10,7 @@ pipeline {
          stage('Checkout Code') {
              steps {
                  git branch: 'main',
-                     url: 'https://github.com/Jobsoumya/py-ci-docker-ghcr'
+                     url: 'https://github.com/Jobsoumya/app'
              }
          }
        
