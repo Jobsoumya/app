@@ -1,1 +1,2 @@
-print("Hello from Jenkins + Docker CI")
+def add(a, b):
+    return a + b
